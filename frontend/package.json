@@ -1,10 +1,16 @@
 {
+ codex/initialize-next.js-project-with-tailwind-css-and-shadcn/ui
   "name": "frontend",
   "version": "0.1.0",
+
+  "name": "brandskept-frontend",
+  "version": "1.0.0",
+ main
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+ codex/initialize-next.js-project-with-tailwind-css-and-shadcn/ui
     "start": "next start",
     "lint": "next lint"
   },
@@ -22,5 +28,14 @@
     "tailwindcss": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest"
+
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "next-auth": "4.22.1"
+ main
   }
 }
