@@ -2,9 +2,15 @@
 
 This repository contains early planning documents and a minimal frontend prototype for the BrandSkept MVP. The frontend is built with **Next.js** and uses **NextAuth.js** to handle authentication against backend APIs.
 
+## Repository Overview
+
+- `BrandskeptTechStack.md` – recommended tech stack for the project
+- `brandskept_roadmap.md` – three‑month roadmap outlining milestones
+- `frontend/` – Next.js app with credentials-based authentication
+
 ## Getting Started
 
-1. Copy `.env.example` to `.env.local` and adjust the URLs for your environment.
+1. Copy `frontend/.env.example` to `frontend/.env.local` and adjust the URLs for your environment.
 2. Install dependencies and start the development server:
 
 ```bash
