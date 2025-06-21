@@ -1,3 +1,13 @@
+ codex/initialize-next.js-project-with-tailwind-css-and-shadcn/ui
+# MVP
+
+This repository contains planning documents for the BrandSkept project.
+A starter Next.js app lives in the `frontend/` directory.
+
+## Getting Started
+
+From the repository root run:
+
  5d4j0z-codex/create-api-routes-for-polls-and-campaigns
 
  djgfaa-codex/create-api-routes-for-polls-and-campaigns
@@ -47,12 +57,23 @@ This repository contains early planning documents and a minimal frontend prototy
 
 1. Copy `frontend/.env.example` to `frontend/.env.local` and adjust the URLs for your environment.
 2. Install dependencies and start the development server:
+ main
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
+
+ codex/initialize-next.js-project-with-tailwind-css-and-shadcn/ui
+The app uses Tailwind CSS and is ready for shadcn/ui components.
+You can initialize shadcn/ui after dependencies are installed with:
+
+```bash
+npx shadcn-ui@latest init
+```
+
+The project was created offline, so node modules are not included.
 
 The app will run on `http://localhost:3000`.
 
@@ -61,6 +82,7 @@ The app will run on `http://localhost:3000`.
 `NextAuth.js` is configured to use a **Credentials** provider. When a user signs in, their credentials are sent to the backend API (`/login`) and the returned user object is stored in a JWT session. Registration posts to the `/register` endpoint on the same API.
 
 See `frontend/pages/api/auth/[...nextauth].ts` for the full configuration.
+ main
  main
  main
  main
