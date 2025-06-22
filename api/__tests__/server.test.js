@@ -25,4 +25,15 @@ describe('Poll API', () => {
     expect(getRes.body.length).toBe(1);
     expect(getRes.body[0]).toMatchObject({ question: 'Best color?' });
   });
+
+  test('POST /api/admin/polls then GET /api/polls/:id returns the created poll', async () => {
+    const pollData = { question: 'Best color?', optionA: 'Red', optionB: 'Blue' };
+    const postRes = await request(app).post('/api/admin/polls').send(pollData);
+    expect(postRes.status).toBe(200);
+
+    const pollId = postRes.body.id;
+    const getRes = await request(app).get(`/api/polls/${pollId}`);
+    expect(getRes.status).toBe(200);
+    expect(getRes.body).toMatchObject({ id: pollId, question: 'Best color?' });
+  });
 });
