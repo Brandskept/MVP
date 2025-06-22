@@ -1,9 +1,5 @@
 {
- codex/set-up-tests-with-supertest-and-jest
-  "name": "frontend",
-
   "name": "brandskept-frontend",
- main
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -13,15 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
- codex/set-up-tests-with-supertest-and-jest
-    "next": "latest",
-    "react": "^18",
-    "react-dom": "^18",
-
     "next": "14.2.3",
     "react": "18.3.1",
     "react-dom": "18.3.1",
- main
     "next-auth": "4.22.1",
     "class-variance-authority": "latest",
     "tailwind-merge": "latest",
