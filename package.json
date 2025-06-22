@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "scripts": {
     "start": "node api/server.js",
+ codex/create-api-routes-for-polls-and-campaigns
     "test": "node api/server.js --test"
+
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.0.2",
+    "supertest": "^7.1.1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+ main
   }
 }
