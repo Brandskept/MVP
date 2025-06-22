@@ -16,3 +16,21 @@ model User {
   name      String?
   createdAt DateTime @default(now())
 }
+
+model Brand {
+  id        Int             @id @default(autoincrement())
+  email     String          @unique
+  name      String?
+  createdAt DateTime        @default(now())
+  accounts  BrandAccount[]
+}
+
+model BrandAccount {
+  id                Int      @id @default(autoincrement())
+  provider          String
+  providerAccountId String
+  type              String
+  brand             Brand    @relation(fields: [brandId], references: [id])
+  brandId           Int
+  createdAt         DateTime @default(now())
+}
