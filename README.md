@@ -54,7 +54,18 @@ The development server will be available at `http://localhost:3000`.
 
 ## Authentication Flow
 
-NextAuth.js uses a **Credentials** provider. When a user signs in, their credentials are sent to the backend (`/login`) and the returned user data is stored in a JWT session. Registration posts to the `/register` endpoint on the same API.
+The project now exposes a comprehensive authentication system. Backend routes are
+mounted under `/auth` and support signup, login, email verification, password reset
+and OAuth callbacks. Environment variables for JWT and SMTP configuration are
+defined in `backend/.env.example`.
 
-See `frontend/pages/api/auth/[...nextauth].ts` for the full configuration.
- main
+To get started:
+
+1. Copy `backend/.env.example` to `backend/.env` and update the values.
+2. Run `npm install` inside `backend/` then execute `npx prisma generate` to
+   create the Prisma client.
+3. Copy `frontend/.env.example` to `frontend/.env.local` and fill in the OAuth
+   provider IDs.
+
+NextAuth.js is configured to use the backend endpoints. See
+`frontend/pages/api/auth/[...nextauth].ts` for details.

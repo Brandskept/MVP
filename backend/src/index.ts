@@ -3,6 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import passport from 'passport';
 import session from 'express-session';
 import { brandAuthRouter } from './brand-auth';
+import authRouter from './auth/routes';
 
 const prisma = new PrismaClient();
 const app = express();
@@ -31,6 +32,8 @@ app.get('/users', async (_req, res) => {
 
 // Routes for brand authentication
 app.use('/brand-auth', brandAuthRouter);
+// Routes for standard authentication
+app.use('/auth', authRouter);
 
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
