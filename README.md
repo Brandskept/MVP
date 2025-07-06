@@ -1,4 +1,3 @@
- codex/create-api-routes-for-polls-and-campaigns
 # MVP
 
 This repository contains a very small prototype for the BrandSkept platform. A minimal Express API and a few Next.js style pages demonstrate how brands can create polls/A/B tests and how consumers can participate and track points.
