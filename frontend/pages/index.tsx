@@ -1,5 +1,6 @@
 import { signIn, signOut, useSession } from 'next-auth/react';
 import Link from 'next/link';
+import SurveyTable from '../components/SurveyTable';
 
 export default function Home() {
   const { data: session } = useSession();
@@ -17,9 +18,12 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <h1>Hello, {session.user?.name}</h1>
-      <button onClick={() => signOut()}>Sign Out</button>
+    <div className="space-y-4">
+      <div>
+        <h1>Hello, {session.user?.name}</h1>
+        <button onClick={() => signOut()}>Sign Out</button>
+      </div>
+      <SurveyTable />
     </div>
   );
 }
