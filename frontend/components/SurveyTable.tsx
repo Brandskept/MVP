@@ -1,3 +1,8 @@
+ dosu3m-codex/compose-app.tsx-layout-with-components
+import React from 'react';
+
+export default function SurveyTable() {
+
  6mpkgq-codex/add-skeleton-loader-and-empty-state-message-to-surveytable
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
@@ -40,10 +45,24 @@ export default function SurveyTable() {
     );
   }
 
+ main
   return (
     <table className="min-w-full border text-left">
       <thead>
         <tr>
+ dosu3m-codex/compose-app.tsx-layout-with-components
+          <th className="border p-2">Survey</th>
+          <th className="border p-2">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td className="border p-2">Sample Survey</td>
+          <td className="border p-2">Active</td>
+        </tr>
+      </tbody>
+    </table>
+
           <th className="border px-4 py-2">Question</th>
         </tr>
       </thead>
@@ -115,6 +134,7 @@ export default function SurveyTable() {
         </table>
       )}
     </div>
+ main
  main
   );
 }

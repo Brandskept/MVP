@@ -1,3 +1,10 @@
+ dosu3m-codex/compose-app.tsx-layout-with-components
+import React from 'react';
+
+export default function Sidebar() {
+  return (
+    <aside className="p-4 bg-gray-100 h-full">Sidebar</aside>
+
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
@@ -80,5 +87,6 @@ export default function Sidebar({ currentTeam }: SidebarProps) {
         )}
       </div>
     </aside>
+ main
   );
 }

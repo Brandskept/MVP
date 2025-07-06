@@ -1,3 +1,11 @@
+ dosu3m-codex/compose-app.tsx-layout-with-components
+import React from 'react';
+
+export default function Header() {
+  return (
+    <header className="p-4 border-b">
+      <h1 className="text-xl font-bold">BrandSkept</h1>
+
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
@@ -91,6 +99,7 @@ export default function Header() {
           </div>
         )}
       </div>
+ main
     </header>
   );
 }

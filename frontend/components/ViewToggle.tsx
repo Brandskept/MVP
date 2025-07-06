@@ -1,4 +1,15 @@
 import React from 'react';
+ dosu3m-codex/compose-app.tsx-layout-with-components
+
+export default function ViewToggle() {
+  return (
+    <div className="flex space-x-2">
+      <button className="border px-3 py-1 rounded">Grid</button>
+      <button className="border px-3 py-1 rounded">List</button>
+    </div>
+  );
+}
+
 import FilterDropdown from './FilterDropdown';
 
 export type ViewMode = 'list' | 'grid';
@@ -45,3 +56,4 @@ export const ViewToggle: React.FC<ViewToggleProps> = ({ viewMode, onChange }) =>
 };
 
 export default ViewToggle;
+ main

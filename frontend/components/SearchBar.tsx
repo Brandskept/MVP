@@ -1,3 +1,14 @@
+ dosu3m-codex/compose-app.tsx-layout-with-components
+import React from 'react';
+
+export default function SearchBar() {
+  return (
+    <input
+      type="text"
+      placeholder="Search..."
+      className="border p-2 rounded w-full"
+    />
+
 import { useEffect, useRef, useState } from "react";
 
 export default function SearchBar() {
@@ -69,5 +80,6 @@ export default function SearchBar() {
         </span>
       )}
     </div>
+ main
   );
 }
